@@ -198,16 +198,40 @@ Output:
 [INFO] Finished at: 2025-11-25T09:37:34Z
 
 ```
+```text
+.
+├── README.md
+├── pom.xml
+└── src
+    ├── main
+    │   └── java
+    │       └── com
+    │           └── mycompany
+    │               └── app
+    │                   └── App.java
+    └── test
+        └── java
+            └── com
+                └── mycompany
+                    └── app
+                        └── AppTest.java
+
+11 directories, 4 files                         # previous all files deleted    
+                  
+
+```
+
 
 ---
 
 ## ✅ Summary
+```
 - `mvn clean` → Cleans project  
 - `mvn compile` → Compiles source code  
 - `mvn test` → Runs unit tests  
 - `mvn package` → Builds JAR file  
 - `mvn install` → Installs JAR into local repo  
-
+```
 This README provides a step-by-step guide to setting up, building, testing, and packaging the **Sample Maven Project** on AWS EC2.
 
 ```
