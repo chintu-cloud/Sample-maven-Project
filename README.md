@@ -1,6 +1,4 @@
-Here’s a clean and professional **README.md** you can use for your `Sample-maven-Project`. It documents the Maven lifecycle, project structure, and EC2 setup exactly as you’ve demonstrated:
 
-```markdown
 # Sample Maven Project
 
 This is a simple Java project built using **Apache Maven**. It demonstrates the Maven build lifecycle, unit testing, and packaging into a JAR file.
@@ -104,8 +102,11 @@ mvn package
   ```
   
 Sample-maven-Project
+
    cd target/classes/com/mycompany/app/
+   
                 ls
+                
                 vi App.class 
 
 
@@ -125,14 +126,18 @@ SourceFile^A^@^HApp.java^@!^@^M^@^B^@^@^@^A^@^Z^@^W^@^X^@^A^@^Y^@^@^@^B^@^O^@^C^
               
 
                 cd ../../../../..
+                
                 ls
+                
                 cd 
+                
                 mvn package                 # jar file created 
                   
                         output:
                         [INFO] BUILD SUCCESS
                         [INFO] Total time:  4.617 s
                         [INFO] Finished at: 2025-11-25T09:18:58Z
+
 
                 tree
 ```
@@ -242,9 +247,4 @@ SourceFile^A^@^HApp.java^@!^@^M^@^B^@^@^@^A^@^Z^@^W^@^X^@^A^@^Y^@^@^@^B^@^O^@^C^
 ## 🎯 Summary
 
 This project is a minimal Maven-based Java application that prints **Hello World!** and includes a unit test. It demonstrates the Maven lifecycle (`clean → compile → test → package → install`) and can be deployed easily on AWS EC2.
-```
-
----
-
-Would you like me to also add **badges** (like build status, Java version, Maven version) at the top of the README to make it visually engaging for GitHub?
 
