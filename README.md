@@ -134,8 +134,11 @@ SourceFile^A^@^HApp.java^@!^@^M^@^B^@^@^@^A^@^Z^@^W^@^X^@^A^@^Y^@^@^@^B^@^O^@^C^
                 mvn package                 # jar file created 
                   
                         output:
+                        
                         [INFO] BUILD SUCCESS
+                        
                         [INFO] Total time:  4.617 s
+                        
                         [INFO] Finished at: 2025-11-25T09:18:58Z
 
 
