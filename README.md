@@ -1,26 +1,27 @@
+     
+# ***** Sample-maven-Project *****
 
-# Sample Maven Project
-
-This is a simple Java project built using **Apache Maven**. It demonstrates the Maven build lifecycle, unit testing, and packaging into a JAR file.
+## 📌 Overview
+This project demonstrates a simple Maven-based Java application with unit testing and packaging. It includes instructions for setting up an EC2 instance, running Maven goals, and verifying build outputs.
 
 ---
 
 ## 🚀 Maven Goals
 
 1. `mvn clean`  
-   Cleans previous build files and removes the `target` directory.
+   Cleans previous project run files.
 
 2. `mvn compile`  
-   Compiles source code into bytecode (`.class` files).
+   Converts source code into machine-understandable bytecode.
 
 3. `mvn test`  
-   Runs unit tests to validate functionality.
+   Validates test cases using JUnit.
 
 4. `mvn package`  
-   Packages the compiled code into a distributable format (`jar`, `war`, or `ear`).
+   Creates the final package (`.jar`, `.war`, `.ear`).
 
 5. `mvn install`  
-   Installs the package into the local Maven repository (`~/.m2/repository`).
+   Installs the final package into the local Maven repository.
 
 ---
 
@@ -31,43 +32,44 @@ This is a simple Java project built using **Apache Maven**. It demonstrates the 
   mvn clean
   mvn compile
   mvn test
+  mvn package
   ```
 
 - Before running `mvn test`, execute:
   ```bash
   mvn clean
   mvn compile
+  mvn test
   ```
 
 ---
 
-## ☁️ Launching on AWS EC2
+## 🖥️ Launch Server (AWS EC2)
 
-1. **Launch EC2 Instance**
-   - Name: `maven-java-project`
-   - Instance type: `t3.micro`
-   - Networking: default
-   - Security group: default
-   - Keypair: not required
+- **Instance Name:** `maven-java-project`  
+- **Instance Type:** `t3.micro`  
+- **Networking:** Default  
+- **Security Group:** Default  
+- **Keypair:** Not required  
 
-2. **Connect to EC2 and Setup**
-   ```bash
-   sudo su -
-   yum install maven -y        # Installs Maven and Java automatically
-   mvn --version
-   yum install git -y
-   git clone https://github.com/chintu-cloud/Sample-maven-Project.git
-   cd Sample-maven-Project
-   yum install tree -y
-   tree
-   ```
+### Connect to EC2
+```bash
+sudo su -
+yum install maven -y        # Installs Maven (Java auto-installed)
+mvn --version
+yum install git -y
+git clone https://github.com/chintu-cloud/Sample-maven-Project.git
+cd Sample-maven-Project
+yum install tree -y
+tree
+```
 
 ---
 
 ## 📂 Project Structure
 
-```
-Sample-maven-Project
+```text
+.
 ├── README.md
 ├── pom.xml
 └── src
@@ -87,168 +89,106 @@ Sample-maven-Project
 
 ---
 
-## 🧪 Build & Test Workflow
+## 🛠️ Maven Commands & Outputs
 
+### Clean
 ```bash
 mvn clean
+```
+Output:
+```
+[INFO] BUILD SUCCESS
+```
+
+---
+
+### Compile
+```bash
 mvn compile
+```
+Creates `target/` folder with compiled `.class` files.
+
+Output:
+```
+[INFO] BUILD SUCCESS
+```
+
+---
+
+### Test
+```bash
 mvn test
+```
+Generates reports in `target/surefire-reports`.
+
+Output:
+```
+[INFO] BUILD SUCCESS
+```
+
+---
+
+### Package
+```bash
 mvn package
 ```
+Creates JAR file:  
+`target/my-app-1.0-SNAPSHOT.jar`
 
-- After `mvn package`, the JAR file will be created in the `target/` directory:
-  ```
-  target/my-app-1.0-SNAPSHOT.jar
-  ```
-  
-Sample-maven-Project
-
-   cd target/classes/com/mycompany/app/
-   
-                ls
-                
-                vi App.class 
-
-
+Output:
 ```
- ---- App.class inside ----
-
-Êþº¾^@^@^@7^@'
-^@^B^@^C^G^@^D^L^@^E^@^F^A^@^Pjava/lang/Object^A^@^F<init>^A^@^C()V     ^@^H^@  ^G^@
-^L^@^K^@^L^A^@^Pjava/lang/System^A^@^Cout^A^@^ULjava/io/PrintStream;^G^@^N^A^@^Ucom/mycompany/app/App^H^@^P^A^@^LHello World!
-^@^R^@^S^G^@^T^L^@^U^@^V^A^@^Sjava/io/PrintStream^A^@^Gprintln^A^@^U(Ljava/lang/String;)V^A^@^GMESSAGE^A^@^RLjava/lang/String;^A^@^MConstantValue^A^@^DCode^A^@^OLineNumberTable^A^@^RLocalVariableTable^A^@^Dthis^A^@^WLcom/mycompany/app/App;^A^@^Dmain^A^@^V([Ljava/lang/String;)V^A^@^Dargs^A^@^S[Ljava/lang/String;^A^@
-getMessage^A^@^T()Ljava/lang/String;^A^@
-SourceFile^A^@^HApp.java^@!^@^M^@^B^@^@^@^A^@^Z^@^W^@^X^@^A^@^Y^@^@^@^B^@^O^@^C^@^A^@^E^@^F^@^A^@^Z^@^@^@/^@^A^@^A^@^@^@^E*·^@^A±^@^@^@^B^@^[^@^@^@^F^@^A^@^@^@
-^@^\^@^@^@^L^@^A^@^@^@^E^@^]^@^^^@^@^@  ^@^_^@ ^@^A^@^Z^@^@^@7^@^B^@^A^@^@^@    ²^@^G^R^O¶^@^Q±^@^@^@^B^@^[^@^@^@
-^@^B^@^@^@^M^@^H^@^N^@^\^@^@^@^L^@^A^@^@^@      ^@!^@"^@^@^@^A^@#^@$^@^A^@^Z^@^@^@-^@^A^@^A^@^@^@^C^R^O°^@^@^@^B^@^[^@^@^@^F^@^A^@^@^@^Q^@^\^@^@^@^L^@^A^@^@^@^C^@^]^@^^^@^@^@^A^@%^@^@^@^B^@&
-```
-
-              
-
-                cd ../../../../..
-                
-                ls
-                
-                cd 
-                
-                mvn package                 # jar file created 
-                  
-                        output:
-                        
-                        [INFO] BUILD SUCCESS
-                        
-                        [INFO] Total time:  4.617 s
-                        
-                        [INFO] Finished at: 2025-11-25T09:18:58Z
-
-
-                tree
-```
-.
-├── README.md
-├── pom.xml
-├── src
-│   ├── main
-│   │   └── java
-│   │       └── com
-│   │           └── mycompany
-│   │               └── app
-│   │                   └── App.java
-│   └── test
-│       └── java
-│           └── com
-│               └── mycompany
-│                   └── app
-│                       └── AppTest.java
-└── target
-    ├── classes
-    │   └── com
-    │       └── mycompany
-    │           └── app
-    │               └── App.class
-    ├── generated-sources
-    │   └── annotations
-    ├── generated-test-sources
-    │   └── test-annotations
-    ├── maven-archiver
-    │   └── pom.properties
-    ├── maven-status
-    │   └── maven-compiler-plugin
-    │       ├── compile
-    │       │   └── default-compile
-    │       │       ├── createdFiles.lst
-    │       │       └── inputFiles.lst
-    │       └── testCompile
-    │           └── default-testCompile
-    │               ├── createdFiles.lst
-    │               └── inputFiles.lst
-    ├── my-app-1.0-SNAPSHOT.jar
-    ├── surefire-reports
-    │   ├── TEST-com.mycompany.app.AppTest.xml
-    │   └── com.mycompany.app.AppTest.txt
-    └── test-classes
-        └── com
-            └── mycompany
-                └── app
-                    └── AppTest.class
-
+[INFO] BUILD SUCCESS
 ```
 
 ---
 
-## ✅ Example Output
+## 📊 Example Target Directory After Build
 
-- **Compile Success**
-  ```
-  [INFO] BUILD SUCCESS
-  ```
-
-- **Test Success**
-  ```
-  [INFO] BUILD SUCCESS
-  ```
-
-- **Package Success**
-  ```
-  [INFO] BUILD SUCCESS
-  ```
+```text
+target
+├── classes
+│   └── com/mycompany/app/App.class
+├── generated-sources/annotations
+├── generated-test-sources/test-annotations
+├── maven-archiver/pom.properties
+├── maven-status/maven-compiler-plugin
+│   ├── compile/default-compile
+│   └── testCompile/default-testCompile
+├── my-app-1.0-SNAPSHOT.jar
+├── surefire-reports
+│   ├── TEST-com.mycompany.app.AppTest.xml
+│   └── com.mycompany.app.AppTest.txt
+└── test-classes/com/mycompany/app/AppTest.class
+```
 
 ---
 
-** mvn clean command run **
+## 🧹 Clean Again
+```bash
+mvn clean
+```
+Removes `target/` folder and resets project.
 
- mvn clean 
+Output:
+```
+[INFO] BUILD SUCCESS
+```
 
-                    output:
-                        [INFO] BUILD SUCCESS
-                        [INFO] Total time:  0.363 s
-                        [INFO] Finished at: 2025-11-25T09:37:34Z
+---
 
-              tree 
+## ✅ Summary
+- `mvn clean` → Cleans project  
+- `mvn compile` → Compiles source code  
+- `mvn test` → Runs unit tests  
+- `mvn package` → Builds JAR file  
+- `mvn install` → Installs JAR into local repo  
 
-  ```
-.
-├── README.md
-├── pom.xml
-└── src
-    ├── main
-    │   └── java
-    │       └── com
-    │           └── mycompany
-    │               └── app
-    │                   └── App.java
-    └── test
-        └── java
-            └── com
-                └── mycompany
-                    └── app
-                        └── AppTest.java
+This README provides a step-by-step guide to setting up, building, testing, and packaging the **Sample Maven Project** on AWS EC2.
 
-11 directories, 4 files                         # previous all files deleted    
-    ```               
+```
 
+✨ This README.md now acts as a **complete documentation** of your Maven project workflow, including EC2 setup, Maven lifecycle, outputs, and directory structures.  
 
-## 🎯 Summary
+Would you like me to also add **badges** (like build status, Java version, Maven version) at the top of the README to make it visually engaging for GitHub?
 
-This project is a minimal Maven-based Java application that prints **Hello World!** and includes a unit test. It demonstrates the Maven lifecycle (`clean → compile → test → package → install`) and can be deployed easily on AWS EC2.
 
