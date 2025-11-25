@@ -167,20 +167,54 @@ Output:
 ## 📊 Example Target Directory After Build
 
 ```text
-target
-├── classes
-│   └── com/mycompany/app/App.class
-├── generated-sources/annotations
-├── generated-test-sources/test-annotations
-├── maven-archiver/pom.properties
-├── maven-status/maven-compiler-plugin
-│   ├── compile/default-compile
-│   └── testCompile/default-testCompile
-├── my-app-1.0-SNAPSHOT.jar
-├── surefire-reports
-│   ├── TEST-com.mycompany.app.AppTest.xml
-│   └── com.mycompany.app.AppTest.txt
-└── test-classes/com/mycompany/app/AppTest.class
+.
+├── README.md
+├── pom.xml
+├── src
+│   ├── main
+│   │   └── java
+│   │       └── com
+│   │           └── mycompany
+│   │               └── app
+│   │                   └── App.java
+│   └── test
+│       └── java
+│           └── com
+│               └── mycompany
+│                   └── app
+│                       └── AppTest.java
+└── target
+    ├── classes
+    │   └── com
+    │       └── mycompany
+    │           └── app
+    │               └── App.class
+    ├── generated-sources
+    │   └── annotations
+    ├── generated-test-sources
+    │   └── test-annotations
+    ├── maven-archiver
+    │   └── pom.properties
+    ├── maven-status
+    │   └── maven-compiler-plugin
+    │       ├── compile
+    │       │   └── default-compile
+    │       │       ├── createdFiles.lst
+    │       │       └── inputFiles.lst
+    │       └── testCompile
+    │           └── default-testCompile
+    │               ├── createdFiles.lst
+    │               └── inputFiles.lst
+    ├── my-app-1.0-SNAPSHOT.jar
+    ├── surefire-reports
+    │   ├── TEST-com.mycompany.app.AppTest.xml
+    │   └── com.mycompany.app.AppTest.txt
+    └── test-classes
+        └── com
+            └── mycompany
+                └── app
+                    └── AppTest.class
+
 ```
 
 ---
