@@ -1,5 +1,11 @@
-     
-# ***** Sample-maven-Project *****
+# ╔═╗┌─┐┌┬┐┌─┐┬  ╔═╗
+# ╚═╗├─┘ │ │ ││  ║  
+# ╚═╝┴   ┴ └─┘┴─┘╚═╝
+
+ # 🚀✨ Sample Maven Project ✨🚀
+---
+A complete, step-by-step Maven workflow guide
+
 
 ## 📌 Overview
 This project demonstrates a simple Maven-based Java application with unit testing and packaging. It includes instructions for setting up an EC2 instance, running Maven goals, and verifying build outputs.
@@ -98,6 +104,9 @@ mvn clean
 Output:
 ```
 [INFO] BUILD SUCCESS
+[INFO] Total time:  0.363 s
+[INFO] Finished at: 2025-11-25T09:37:34Z
+
 ```
 
 ---
@@ -111,6 +120,9 @@ Creates `target/` folder with compiled `.class` files.
 Output:
 ```
 [INFO] BUILD SUCCESS
+[INFO] Total time:  0.363 s
+[INFO] Finished at: 2025-11-25T09:37:34Z
+
 ```
 
 ---
@@ -124,6 +136,9 @@ Generates reports in `target/surefire-reports`.
 Output:
 ```
 [INFO] BUILD SUCCESS
+[INFO] Total time:  0.363 s
+[INFO] Finished at: 2025-11-25T09:37:34Z
+
 ```
 
 ---
@@ -138,6 +153,9 @@ Creates JAR file:
 Output:
 ```
 [INFO] BUILD SUCCESS
+[INFO] Total time:  0.363 s
+[INFO] Finished at: 2025-11-25T09:37:34Z
+
 ```
 
 ---
@@ -172,6 +190,9 @@ Removes `target/` folder and resets project.
 Output:
 ```
 [INFO] BUILD SUCCESS
+[INFO] Total time:  0.363 s
+[INFO] Finished at: 2025-11-25T09:37:34Z
+
 ```
 
 ---
