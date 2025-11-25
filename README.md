@@ -35,22 +35,25 @@ This project demonstrates a simple Maven-based Java application with unit testin
 
 ---
 
-## ⚠️ Important Notes
+## 🔑 Important Notes
+1. **Before running `mvn package`:**
+   ```bash
+   run: (automatic)
+                            mvn clean
+                            mvn compile
+                            mvn test
+   then run:
+                            mvn package
+   ```
 
-- Before running `mvn package`, execute:
-  ```bash
-  mvn clean
-  mvn compile
-  mvn test
-  mvn package
-  ```
-
-- Before running `mvn test`, execute:
-  ```bash
-  mvn clean
-  mvn compile
-  mvn test
-  ```
+2. **Before running `mvn test`:**
+   ```bash
+    run: (automatic)
+                            mvn clean
+                            mvn compile
+   then run:
+                            mvn test
+   ```
 
 ---
 
