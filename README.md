@@ -115,8 +115,9 @@ Output:
 [INFO] -------------------------< alexa:project-java >-------------------------
 [INFO] Building project-java 1.0-SNAPSHOT
 [INFO] --------------------------------[ war ]---------------------------------
-[INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ project-java ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
@@ -143,8 +144,9 @@ Output:
 [INFO] -------------------------< alexa:project-java >-------------------------
 [INFO] Building project-java 1.0-SNAPSHOT
 [INFO] --------------------------------[ war ]---------------------------------
-[INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ project-java ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
@@ -171,8 +173,9 @@ Output:
 [INFO] -------------------------< alexa:project-java >-------------------------
 [INFO] Building project-java 1.0-SNAPSHOT
 [INFO] --------------------------------[ war ]---------------------------------
-[INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ project-java ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
@@ -200,8 +203,9 @@ Output:
 [INFO] -------------------------< alexa:project-java >-------------------------
 [INFO] Building project-java 1.0-SNAPSHOT
 [INFO] --------------------------------[ war ]---------------------------------
-[INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ project-java ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
@@ -284,8 +288,9 @@ Output:
 [INFO] -------------------------< alexa:project-java >-------------------------
 [INFO] Building project-java 1.0-SNAPSHOT
 [INFO] --------------------------------[ war ]---------------------------------
-[INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ project-java ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
