@@ -1,6 +1,7 @@
 <img width="881" height="629" alt="Untitled Diagram drawio (5)" src="https://github.com/user-attachments/assets/938bc894-7619-478e-adda-e65c53726051" />
 
-![Paint](https://img.icons8.com/color/48/paint-palette.png)
+![Gear](https://img.icons8.com/color/48/gear.png)
+
 
        
       
