@@ -216,6 +216,7 @@ SourceFile^A^@^HApp.java^@!^@^M^@^B^@^@^@^A^@^Z^@^W^@^X^@^A^@^Y^@^@^@^B^@^O^@^C^
 ---
 
 ** mvn clean command run **
+
  mvn clean 
 
                     output:
