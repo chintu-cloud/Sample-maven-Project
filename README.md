@@ -102,6 +102,89 @@ mvn package
   ```
   target/my-app-1.0-SNAPSHOT.jar
   ```
+  
+Sample-maven-Project
+   cd target/classes/com/mycompany/app/
+                ls
+                vi App.class 
+
+
+```
+ ---- App.class inside ----
+
+Êþº¾^@^@^@7^@'
+^@^B^@^C^G^@^D^L^@^E^@^F^A^@^Pjava/lang/Object^A^@^F<init>^A^@^C()V     ^@^H^@  ^G^@
+^L^@^K^@^L^A^@^Pjava/lang/System^A^@^Cout^A^@^ULjava/io/PrintStream;^G^@^N^A^@^Ucom/mycompany/app/App^H^@^P^A^@^LHello World!
+^@^R^@^S^G^@^T^L^@^U^@^V^A^@^Sjava/io/PrintStream^A^@^Gprintln^A^@^U(Ljava/lang/String;)V^A^@^GMESSAGE^A^@^RLjava/lang/String;^A^@^MConstantValue^A^@^DCode^A^@^OLineNumberTable^A^@^RLocalVariableTable^A^@^Dthis^A^@^WLcom/mycompany/app/App;^A^@^Dmain^A^@^V([Ljava/lang/String;)V^A^@^Dargs^A^@^S[Ljava/lang/String;^A^@
+getMessage^A^@^T()Ljava/lang/String;^A^@
+SourceFile^A^@^HApp.java^@!^@^M^@^B^@^@^@^A^@^Z^@^W^@^X^@^A^@^Y^@^@^@^B^@^O^@^C^@^A^@^E^@^F^@^A^@^Z^@^@^@/^@^A^@^A^@^@^@^E*·^@^A±^@^@^@^B^@^[^@^@^@^F^@^A^@^@^@
+^@^\^@^@^@^L^@^A^@^@^@^E^@^]^@^^^@^@^@  ^@^_^@ ^@^A^@^Z^@^@^@7^@^B^@^A^@^@^@    ²^@^G^R^O¶^@^Q±^@^@^@^B^@^[^@^@^@
+^@^B^@^@^@^M^@^H^@^N^@^\^@^@^@^L^@^A^@^@^@      ^@!^@"^@^@^@^A^@#^@$^@^A^@^Z^@^@^@-^@^A^@^A^@^@^@^C^R^O°^@^@^@^B^@^[^@^@^@^F^@^A^@^@^@^Q^@^\^@^@^@^L^@^A^@^@^@^C^@^]^@^^^@^@^@^A^@%^@^@^@^B^@&
+```
+
+              
+
+                cd ../../../../..
+                ls
+                cd 
+                mvn package                 # jar file created 
+                  
+                        output:
+                        [INFO] BUILD SUCCESS
+                        [INFO] Total time:  4.617 s
+                        [INFO] Finished at: 2025-11-25T09:18:58Z
+
+                tree
+```
+.
+├── README.md
+├── pom.xml
+├── src
+│   ├── main
+│   │   └── java
+│   │       └── com
+│   │           └── mycompany
+│   │               └── app
+│   │                   └── App.java
+│   └── test
+│       └── java
+│           └── com
+│               └── mycompany
+│                   └── app
+│                       └── AppTest.java
+└── target
+    ├── classes
+    │   └── com
+    │       └── mycompany
+    │           └── app
+    │               └── App.class
+    ├── generated-sources
+    │   └── annotations
+    ├── generated-test-sources
+    │   └── test-annotations
+    ├── maven-archiver
+    │   └── pom.properties
+    ├── maven-status
+    │   └── maven-compiler-plugin
+    │       ├── compile
+    │       │   └── default-compile
+    │       │       ├── createdFiles.lst
+    │       │       └── inputFiles.lst
+    │       └── testCompile
+    │           └── default-testCompile
+    │               ├── createdFiles.lst
+    │               └── inputFiles.lst
+    ├── my-app-1.0-SNAPSHOT.jar
+    ├── surefire-reports
+    │   ├── TEST-com.mycompany.app.AppTest.xml
+    │   └── com.mycompany.app.AppTest.txt
+    └── test-classes
+        └── com
+            └── mycompany
+                └── app
+                    └── AppTest.class
+
+```
 
 ---
 
@@ -123,6 +206,38 @@ mvn package
   ```
 
 ---
+
+** mvn clean command run **
+ mvn clean 
+
+                    output:
+                        [INFO] BUILD SUCCESS
+                        [INFO] Total time:  0.363 s
+                        [INFO] Finished at: 2025-11-25T09:37:34Z
+
+              tree 
+
+  ```
+.
+├── README.md
+├── pom.xml
+└── src
+    ├── main
+    │   └── java
+    │       └── com
+    │           └── mycompany
+    │               └── app
+    │                   └── App.java
+    └── test
+        └── java
+            └── com
+                └── mycompany
+                    └── app
+                        └── AppTest.java
+
+11 directories, 4 files                         # previous all files deleted    
+    ```               
+
 
 ## 🎯 Summary
 
