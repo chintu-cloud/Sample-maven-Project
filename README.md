@@ -110,19 +110,19 @@ mvn clean
 ```
 Output:
 ```
-                       [INFO] Scanning for projects...
-                       [INFO] 
-                       [INFO] -------------------------< alexa:project-java >-------------------------
-                       [INFO] Building project-java 1.0-SNAPSHOT
-                       [INFO] --------------------------------[ war ]---------------------------------
-                       [INFO] 
-                       [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ project-java ---
-                       [INFO] ------------------------------------------------------------------------
-                       [INFO] BUILD SUCCESS
-                       [INFO] ------------------------------------------------------------------------
-                       [INFO] Total time:  0.304 s
-                       [INFO] Finished at: 2025-11-25T10:31:23Z
-                       [INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< alexa:project-java >-------------------------
+[INFO] Building project-java 1.0-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ project-java ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.304 s
+[INFO] Finished at: 2025-11-25T10:31:23Z
+[INFO] ------------------------------------------------------------------------
 
 
 
@@ -138,19 +138,19 @@ Creates `target/` folder with compiled `.class` files.
 
 Output:
 ```
-                       [INFO] Scanning for projects...
-                       [INFO] 
-                       [INFO] -------------------------< alexa:project-java >-------------------------
-                       [INFO] Building project-java 1.0-SNAPSHOT
-                       [INFO] --------------------------------[ war ]---------------------------------
-                       [INFO] 
-                       [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ project-java ---
-                       [INFO] ------------------------------------------------------------------------
-                       [INFO] BUILD SUCCESS
-                       [INFO] ------------------------------------------------------------------------
-                       [INFO] Total time:  0.304 s
-                       [INFO] Finished at: 2025-11-25T10:31:23Z
-                       [INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< alexa:project-java >-------------------------
+[INFO] Building project-java 1.0-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ project-java ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.304 s
+[INFO] Finished at: 2025-11-25T10:31:23Z
+[INFO] ------------------------------------------------------------------------
 
 
 
@@ -166,20 +166,20 @@ Generates reports in `target/surefire-reports`.
 
 Output:
 ```
-                       [INFO] Scanning for projects...
-                       [INFO] 
-                       [INFO] -------------------------< alexa:project-java >-------------------------
-                       [INFO] Building project-java 1.0-SNAPSHOT
-                       [INFO] --------------------------------[ war ]---------------------------------
-                       [INFO] 
-                       [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ project-java ---
-                       [INFO] ------------------------------------------------------------------------
-                       [INFO] BUILD SUCCESS
-                       [INFO] ------------------------------------------------------------------------
-                       [INFO] Total time:  0.304 s
-                       [INFO] Finished at: 2025-11-25T10:31:23Z
-                       [INFO] ------------------------------------------------------------------------
-
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< alexa:project-java >-------------------------
+[INFO] Building project-java 1.0-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ project-java ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.304 s
+[INFO] Finished at: 2025-11-25T10:31:23Z
+[INFO] ------------------------------------------------------------------------
+                    
 
 
 ```
@@ -195,19 +195,20 @@ Creates JAR file:
 
 Output:
 ```
-                       [INFO] Scanning for projects...
-                       [INFO] 
-                       [INFO] -------------------------< alexa:project-java >-------------------------
-                       [INFO] Building project-java 1.0-SNAPSHOT
-                       [INFO] --------------------------------[ war ]---------------------------------
-                       [INFO] 
-                       [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ project-java ---
-                       [INFO] ------------------------------------------------------------------------
-                       [INFO] BUILD SUCCESS
-                       [INFO] ------------------------------------------------------------------------
-                       [INFO] Total time:  0.304 s
-                       [INFO] Finished at: 2025-11-25T10:31:23Z
-                       [INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< alexa:project-java >-------------------------
+[INFO] Building project-java 1.0-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ project-java ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.304 s
+[INFO] Finished at: 2025-11-25T10:31:23Z
+[INFO] ------------------------------------------------------------------------
+
 
 
 
@@ -278,19 +279,20 @@ Removes `target/` folder and resets project.
 
 Output:
 ```
-                       [INFO] Scanning for projects...
-                       [INFO] 
-                       [INFO] -------------------------< alexa:project-java >-------------------------
-                       [INFO] Building project-java 1.0-SNAPSHOT
-                       [INFO] --------------------------------[ war ]---------------------------------
-                       [INFO] 
-                       [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ project-java ---
-                       [INFO] ------------------------------------------------------------------------
-                       [INFO] BUILD SUCCESS
-                       [INFO] ------------------------------------------------------------------------
-                       [INFO] Total time:  0.304 s
-                       [INFO] Finished at: 2025-11-25T10:31:23Z
-                       [INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< alexa:project-java >-------------------------
+[INFO] Building project-java 1.0-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ project-java ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.304 s
+[INFO] Finished at: 2025-11-25T10:31:23Z
+[INFO] ------------------------------------------------------------------------
+
 
 
 
